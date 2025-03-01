@@ -8,10 +8,8 @@ function handleCheck(e) {
   if (e.shiftKey && this.checked) {
     // loop over every checkbox
     checkboxes.forEach(checkbox => {
-      console.log(checkbox);
       if (checkbox === this || checkbox === lastChecked) {
         inBetween = !inBetween;
-        console.log('Starting to check them in between!');
       }
 
       if (inBetween) {
